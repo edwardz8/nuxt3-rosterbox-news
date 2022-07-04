@@ -13,6 +13,7 @@
     "tailwindcss": "^3.1.4"
   },
   "dependencies": {
+    "@nuxtjs/vercel-builder": "^0.22.1",
     "@supabase/supabase-js": "^1.35.4"
   }
 }
