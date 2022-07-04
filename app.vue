@@ -20,7 +20,7 @@
           <input
             type="email"
             id="email"
-            v-model="email"
+            v-model="userEmail"
             name="email"
             class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
@@ -40,13 +40,12 @@
 <script setup>
     const DBResponse = ref([])
     const router = useRouter()
-    const email = ref('')
+    const userEmail = ref('')
 
     async function postToDB() {
-        const result = await fetch(`/api/subscribe?email=${email.value}`)
+        const result = await fetch(`/api/subscribe?email=${userEmail.value}`)
         const data = await result.json()
         DBResponse.value = data
         email.value = ''
-        // router.push('/')
     }
 </script>
