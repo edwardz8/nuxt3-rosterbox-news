@@ -46,7 +46,7 @@
         const result = await fetch(`/api/subscribe?email=${email.value}`)
         const data = await result.json()
         DBResponse.value = data
-        email.value = ''
-        router.push('/')
+        // email.value = ''
+        // router.push('/')
     }
 </script>
