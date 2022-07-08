@@ -39,6 +39,7 @@
 
 <script setup>
     const DBResponse = ref([])
+    
     const router = useRouter()
     const userEmail = ref('')
 
