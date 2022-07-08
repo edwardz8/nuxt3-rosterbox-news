@@ -18,8 +18,3 @@ export default defineNuxtConfig({
         shim: false
     },
 })
-
-
-/* 
-<script defer data-domain="rosterbox.xyz" src="https://plausible.io/js/plausible.js"></script>
-*/
